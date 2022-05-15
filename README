@@ -1,0 +1,34 @@
+# VBA Challenge 2
+
+## Overview of Project
+
+- Deliverable 1: Refactored VBA code to measure stock performance for the years 2017 & 2018. Includes two png images demonstrating the VBA code execution time for their respective years. (VBA_Challenge_2017.png & VBA_Challenge_2018.png in Resources Folder)
+- Deliverable 2: A written analysis of the results
+
+### Purpose
+
+Steve wants to analyze all stocks in the dataset, but sometimes there are several thousand stocks. The code presented in the module might work well for the dozen stocks given, but might severely lack execution once the number of stocks increases. Therefore, the purpose of this challenge is to optimize the VBA code to run more efficiently and perform better when prompted to analyze a greater number of stocks.
+
+
+## Analysis and Challenges
+
+### Analysis of 2017 & 2018 Stock Performance
+
+Overall, 2017 was a great year for investing in the majority of stocks excluding TERP. Steve could have told his parents to invest in DQ, SEDG, ENPH, and FSLR for returns exceeding 100%. Ignoring the 4 stocks with returns above 100%, Steve still could have recommended diversifying their portfolio in the other positive stocks and enjoyed a sizable return nonetheless. However, 2018 painted a different picture and the majority of stocks resulted in negative returns. The only 2 stocks with positive returns were ENPH and RUN, potentially indicating that these will have consistent positive growth over the long run. Steve could also look into SEDG, while it provided negative returns in 2018, its decline in profits from 2017 was not that severe and could experience a bounce back the following year. My recommendation for Steve would be to place most of the investments into ENPH, RUN, and SEDG and diversify as much as possible with the remaining stock options. 
+
+
+
+### Analysis of execution times for original and refactored script
+
+Well the original script allegedly ran at speeds of 0.496 for the year 2017 and 0.484 for the year 2018. After some refactoring, which mainly means I just did some simple things like shortening lines of code, names, data types (i.e. double to single) I was able to shorten down the execution time for both years. The refactored code ran at speeds of 0.285 for the year 2017 and 0.297 for the year 2018. This approximately equates to a 42.5% execution time reduction for the year 2017 and 38.7% execution time reduction for the year 2018. 
+
+## Summary 
+
+- Advantages & disadvantages of refactored code in general: 
+
+The advantages of refactored code is that the code is optimized to run faster and provide the desired results quicker. For example, in this challenge it allows for quicker analysis of several thousand stocks rather than just 12 stocks. The disadvantages would be that in order to optimize the code it has to be specialized somewhat for that specific task and the code ends up losing its ability to be repurposed easily for another set of data. 
+
+- Advantages & disadvantages of original and refactored VBA script:
+
+The advantages of the original code is that it is very malleable and can be utilized for a number of given datasets. On the other hand, the advantages of the refactored code is that it is tailored for the task and can provide the desired results quicker and at higher volumes. A disadvantage of the original code is that the code cannot process a high volume of data without taking forever or costing too much in the long run. Lastly, as I mentioned above, a disadvantage of refactored code is that in order to optimize the code for a specific task it sometimes loses it ability to repurposed for types of data analysis. While the refactored code essentially does not change what it does from the original, it's geared towards something and its focus is narrowed down. 
+
